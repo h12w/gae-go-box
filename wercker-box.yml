@@ -1,11 +1,16 @@
 name: gae-go
 version: 0.0.1
-inherits: wercker/default
+inherits: wercker/ubuntu12.04-webessentials@1.0.4
 type: service
 platform: ubuntu@12.04
 description: wercker box with Google App Engine and Go environment
 keywords:
-  - App Engine
-  - Golang
-script: |
-  sudo apt-get update -y
+    - App Engine
+    - Golang
+packages:
+    - git
+    - mercurial
+    - bzr
+    - subversion
+    - unzip
+script: ./init.sh
