@@ -6,11 +6,8 @@ set -x
 
 DOWNLOAD="curl -OL"
 sudo apt-get update
-echo $(pwd)
-echo $HOME
-ls $HOME
-ls
-source $HOME/gae-go-env.inc
+cp gae-go-env.sh $HOME
+source gae-go-env.sh
 
 # Go environment
 
@@ -39,5 +36,5 @@ GAE_ZIP=go_appengine_sdk_linux_amd64-$GAE_VER.zip
 GAE_URL=https://storage.googleapis.com/appengine-sdks/featured/$GAE_ZIP
 
 $DOWNLOAD $GAE_URL
-unzip -q $GAE_ZIP
+unzip -q $GAE_ZIP -d $HOME
 rm $GAE_ZIP
