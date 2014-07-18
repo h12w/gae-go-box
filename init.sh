@@ -6,7 +6,11 @@ set -x
 
 DOWNLOAD="curl -OL"
 sudo apt-get update
-source gae-go-env.inc
+cat $(pwd)
+cat $HOME
+ls $HOME
+ls
+source $HOME/gae-go-env.inc
 
 # Go environment
 
