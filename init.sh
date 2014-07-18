@@ -5,7 +5,6 @@ set -x
 # common
 
 DOWNLOAD="curl -OL"
-sudo apt-get update -qq
 
 
 # Go environment
@@ -24,15 +23,8 @@ rm $GO_ZIP
 mv $HOME/go $GOROOT
 mkdir -p $GOPATH/{src,pkg,bin}
 
-sudo apt-get install mercurial -y -qq
-sudo apt-get install git -y -qq
-sudo apt-get install bzr -y -qq
-sudo apt-get install subversion -y -qq
-
 
 # App Engine (Go)
-
-sudo apt-get install unzip -y -qq
 
 GAE_VER=1.9.7
 GAE_ZIP=go_appengine_sdk_linux_amd64-$GAE_VER.zip
