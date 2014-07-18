@@ -6,17 +6,13 @@ set -x
 
 DOWNLOAD="curl -OL"
 sudo apt-get update
-
+source gae-go-env.inc
 
 # Go environment
 
 GO_VER=1.3
 GO_ZIP=go$GO_VER.linux-amd64.tar.gz
 GO_URL=http://golang.org/dl/$GO_ZIP
-
-export GOROOT=$HOME/go-dist
-export GOPATH=$HOME/go
-export PATH=$PATH:$GOROOT/bin:$GOPATH/bin
 
 $DOWNLOAD $GO_URL
 tar -C $HOME -xzf $GO_ZIP
@@ -37,8 +33,6 @@ sudo apt-get install unzip -y
 GAE_VER=1.9.7
 GAE_ZIP=go_appengine_sdk_linux_amd64-$GAE_VER.zip
 GAE_URL=https://storage.googleapis.com/appengine-sdks/featured/$GAE_ZIP
-GAE_SDK=$HOME/go_appengine
-export PATH=$PATH:$GAE_SDK
 
 $DOWNLOAD $GAE_URL
 unzip -q $GAE_ZIP
