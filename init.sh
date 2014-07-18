@@ -37,7 +37,7 @@ sudo apt-get install unzip -y
 GAE_VER=1.9.7
 GAE_ZIP=go_appengine_sdk_linux_amd64-$GAE_VER.zip
 GAE_URL=https://storage.googleapis.com/appengine-sdks/featured/$GAE_ZIP
-GAE_SDK=go_appengine
+GAE_SDK=$HOME/go_appengine
 export PATH=$PATH:$GAE_SDK
 
 $DOWNLOAD $GAE_URL
