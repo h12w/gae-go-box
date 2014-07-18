@@ -6,8 +6,8 @@ set -x
 
 DOWNLOAD="curl -OL"
 sudo apt-get update
-cat $(pwd)
-cat $HOME
+echo $(pwd)
+echo $HOME
 ls $HOME
 ls
 source $HOME/gae-go-env.inc
