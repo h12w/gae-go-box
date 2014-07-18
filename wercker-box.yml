@@ -5,7 +5,7 @@ type: service
 platform: ubuntu@12.04
 description: wercker box with Google App Engine and Go environment
 keywords:
-    - App Engine
-    - Golang
+  - App Engine
+  - Golang
 script: |
-    ./init.sh
+  sudo apt-get update -y
