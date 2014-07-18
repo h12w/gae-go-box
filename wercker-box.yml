@@ -7,5 +7,5 @@ description: wercker box with Google App Engine and Go environment
 keywords:
     - App Engine
     - Golang
-packages:
-script: ./init.sh
+script: |
+    ./init.sh
