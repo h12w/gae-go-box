@@ -6,6 +6,13 @@ set -x
 
 DOWNLOAD="curl -OL"
 sudo apt-get update
+
+echo "test env"
+echo $(pwd)
+ls -alF
+echo $HOME
+ls -alF $HOME
+
 cp gae-go-env.sh $HOME
 source gae-go-env.sh
 
