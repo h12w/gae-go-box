@@ -1,4 +1,4 @@
-#!/bin/sh
+#!/usr/bin/env bash
 set -e
 set -x
 
@@ -14,7 +14,7 @@ echo $HOME
 ls -alF $HOME
 
 cat gae-go-env.sh >> $HOME/.profile
-source ./gae-go-env.sh
+source gae-go-env.sh
 
 cat $HOME/.profile
 
