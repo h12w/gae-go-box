@@ -13,8 +13,10 @@ ls -alF
 echo $HOME
 ls -alF $HOME
 
-cp gae-go-env.sh $HOME
-source gae-go-env.sh
+cat gae-go-env.sh >> $HOME/.profile
+source ./gae-go-env.sh
+
+cat $HOME/.profile
 
 # Go environment
 
