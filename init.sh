@@ -13,7 +13,7 @@ ls -alF
 echo $HOME
 ls -alF $HOME
 
-cat gae-go-env.sh >> $HOME/.profile
+cat gae-go-env.sh >> $HOME/.bash_profile
 source gae-go-env.sh
 
 cat $HOME/.profile
