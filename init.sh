@@ -16,7 +16,7 @@ ls -alF $HOME
 cat gae-go-env.sh >> $HOME/.bash_profile
 source gae-go-env.sh
 
-cat $HOME/.profile
+cat $HOME/.bash_profile
 
 # Go environment
 
@@ -40,7 +40,7 @@ sudo apt-get install subversion -y
 
 sudo apt-get install unzip -y
 
-GAE_VER=1.9.7
+GAE_VER=1.9.17
 GAE_ZIP=go_appengine_sdk_linux_amd64-$GAE_VER.zip
 GAE_URL=https://storage.googleapis.com/appengine-sdks/featured/$GAE_ZIP
 
